@@ -1,0 +1,29 @@
+{
+	"name": "PlanoDeFundoEmBlocos3",
+	"plugin-id": "TiledBg",
+	"sid": 937541240261120,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Âncora",
+			"sid": 860798057048242
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 380,
+		"height": 96,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 5625488,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}
