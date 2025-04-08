@@ -1,0 +1,282 @@
+{
+	"name": "v-phase1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "LifeV",
+			"type": "number",
+			"initialValue": "2",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 751428367568892
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Sistema Movimentação",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 302121631462448
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 282743548495229,
+							"parameters": {
+								"audio-file": "fx-gentle-glass-bells-ringtone-320337",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 680142592901487
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 909312626921850,
+							"parameters": {
+								"key": 39
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Vampire1",
+							"sid": 733592976357302,
+							"parameters": {
+								"animation": "\"Walk-V1\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 317424097253565,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-left-right-key-down",
+									"objectClass": "Teclado",
+									"sid": 844601688145019,
+									"parameters": {
+										"key": "left-shift"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Vampire1",
+									"sid": 135018903959773,
+									"parameters": {
+										"animation": "\"Run-V1\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 352152807093137
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-released",
+							"objectClass": "Teclado",
+							"sid": 226385013422192,
+							"parameters": {
+								"key": 39
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Vampire1",
+							"sid": 209301438896130,
+							"parameters": {
+								"animation": "\"Idle-V1\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Vampire1",
+							"sid": 183149409908542,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 652198417846282
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 446854106298271,
+							"parameters": {
+								"key": 37
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "Vampire1",
+							"sid": 825910870396018,
+							"parameters": {
+								"state": "mirrored"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Vampire1",
+							"sid": 286976848855674,
+							"parameters": {
+								"animation": "\"Walk-V1\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 404884058669294,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-left-right-key-down",
+									"objectClass": "Teclado",
+									"sid": 204562049659902,
+									"parameters": {
+										"key": "left-shift"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Vampire1",
+									"sid": 613349888333202,
+									"parameters": {
+										"animation": "\"Run-V1\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 316484476818364
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-released",
+							"objectClass": "Teclado",
+							"sid": 463431942249560,
+							"parameters": {
+								"key": 37
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Vampire1",
+							"sid": 892942013435590,
+							"parameters": {
+								"animation": "\"Idle-V1\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 771178605546089
+				}
+			],
+			"sid": 540961684969778
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Sistema Ataques",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 268862234005127,
+							"parameters": {
+								"key": 70
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Vampire1",
+							"sid": 180077631463859,
+							"parameters": {
+								"animation": "\"Attack-V1\"",
+								"from": "current-frame"
+							}
+						}
+					],
+					"sid": 673135898933263
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "Vampire1",
+							"sid": 942461552720908,
+							"parameters": {
+								"animation": "\"Attack-V1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-animation",
+							"objectClass": "Vampire1",
+							"sid": 382561586267180
+						},
+						{
+							"id": "stop-loop",
+							"objectClass": "System",
+							"sid": 958159556790230
+						}
+					],
+					"sid": 947951251704042
+				}
+			],
+			"sid": 253740818805443
+		}
+	],
+	"sid": 117609331256778
+}
