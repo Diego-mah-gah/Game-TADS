@@ -1,14 +1,14 @@
 {
-	"name": "PlanoDeFundoEmBlocos",
+	"name": "bordaPonte",
 	"plugin-id": "TiledBg",
-	"sid": 602436624068294,
+	"sid": 547561173941055,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
-		"width": 560,
+		"width": 576,
 		"height": 73,
 		"originX": 0.5,
 		"originY": 0.5,
@@ -16,7 +16,7 @@
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
 		"fileType": "image/png",
-		"imageSpriteId": 4337297,
+		"imageSpriteId": 9230931,
 		"useCollisionPoly": true,
 		"tag": ""
 	}

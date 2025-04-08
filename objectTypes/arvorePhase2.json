@@ -1,22 +1,22 @@
 {
-	"name": "PlanoDeFundoEmBlocos",
+	"name": "arvorePhase2",
 	"plugin-id": "TiledBg",
-	"sid": 602436624068294,
+	"sid": 520765290437977,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
-		"width": 560,
-		"height": 73,
+		"width": 377,
+		"height": 249,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
 		"fileType": "image/png",
-		"imageSpriteId": 4337297,
+		"imageSpriteId": 9182091,
 		"useCollisionPoly": true,
 		"tag": ""
 	}

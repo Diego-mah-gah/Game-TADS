@@ -1,14 +1,14 @@
 {
-	"name": "PlanoDeFundoEmBlocos",
+	"name": "ponteQuebradaPhase2",
 	"plugin-id": "TiledBg",
-	"sid": 602436624068294,
+	"sid": 568557588935801,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
-		"width": 560,
+		"width": 254,
 		"height": 73,
 		"originX": 0.5,
 		"originY": 0.5,
@@ -16,7 +16,7 @@
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
 		"fileType": "image/png",
-		"imageSpriteId": 4337297,
+		"imageSpriteId": 456693,
 		"useCollisionPoly": true,
 		"tag": ""
 	}

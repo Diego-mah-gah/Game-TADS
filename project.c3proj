@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Audio",
+			"name": "Áudio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Teclado",
 			"author": "Scirra",
@@ -28,20 +35,6 @@
 			"bundled": false
 		},
 		{
-			"type": "plugin",
-			"id": "Timeline",
-			"name": "Controlador da timeline",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Anchor",
-			"name": "Âncora",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
 			"type": "behavior",
 			"id": "Platform",
 			"name": "Plataforma",
@@ -54,18 +47,54 @@
 			"name": "Restrito ao layout",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Centrar em",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Sólido",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "depthstripe",
+			"name": "Faixa em profundidade",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "vmnkesxe2mv",
 	"objectTypes": {
 		"items": [
-			"PlanoDeFundoEmBlocos",
-			"PlanoDeFundoEmBlocos2",
-			"PlanoDeFundoEmBlocos4",
-			"PlanoDeFundoEmBlocos3",
-			"ControladorDaTimeline",
-			"Sprite2",
-			"Teclado"
+			"CeuEstrelado",
+			"arvoresPhase1",
+			"ChaoComFisica",
+			"Nuvens",
+			"Vampire1",
+			"Teclado",
+			"Áudio",
+			"LuaPhase2",
+			"chaoTerra",
+			"chaoPedra1",
+			"ponteTijolo",
+			"arvorePhase2",
+			"bordaPonte",
+			"ponteQuebradaPhase2",
+			"Vampire2",
+			"ceuPhase3",
+			"luaPhase3",
+			"paredeCastelo",
+			"PlantasCastelo",
+			"Pilar",
+			"ponteCastelo",
+			"PlanoDeFundoEmBlocos"
 		],
 		"subfolders": []
 	},
@@ -77,13 +106,21 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"phase1",
+			"phase2",
+			"phase3",
+			"gameOver",
+			"titleScreen"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Folha de eventos 1"
+			"v-phase1",
+			"v-phase2",
+			"v-gameOverScreen",
+			"v-titleScreen",
+			"v-phase3"
 		],
 		"subfolders": []
 	},
