@@ -14,24 +14,32 @@
 						{
 							"id": "on-start-of-layout",
 							"objectClass": "System",
-							"sid": 875152457961185
+							"sid": 738553337208256
 						}
 					],
 					"actions": [
 						{
 							"id": "play",
 							"objectClass": "Áudio",
-							"sid": 863722949268328,
+							"sid": 358623586772173,
 							"parameters": {
-								"audio-file": "church-bell-5993",
+								"audio-file": "bells-sound-effect-321728",
 								"loop": "not-looping",
 								"volume": "0",
 								"stereo-pan": "0",
-								"tag-optional": "\"\""
+								"tag-optional": "\"Song-P2\""
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Áudio",
+							"sid": 520788828733900,
+							"parameters": {
+								"tag": "\"Song-P1\""
 							}
 						}
 					],
-					"sid": 408824784851705
+					"sid": 305112859085057
 				},
 				{
 					"eventType": "block",
@@ -39,7 +47,7 @@
 						{
 							"id": "on-key-pressed",
 							"objectClass": "Teclado",
-							"sid": 855663866770388,
+							"sid": 612549699258594,
 							"parameters": {
 								"key": 39
 							}
@@ -49,14 +57,26 @@
 						{
 							"id": "set-animation",
 							"objectClass": "Vampire1",
-							"sid": 688508634614767,
+							"sid": 866032674456665,
 							"parameters": {
 								"animation": "\"Walk-V1\"",
 								"from": "beginning"
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 147627998392940,
+							"parameters": {
+								"audio-file": "walking-on-leaves-260279",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"walk\""
+							}
 						}
 					],
-					"sid": 867285350456871,
+					"sid": 318414363243911,
 					"children": [
 						{
 							"eventType": "block",
@@ -64,7 +84,7 @@
 								{
 									"id": "is-left-right-key-down",
 									"objectClass": "Teclado",
-									"sid": 850729866839319,
+									"sid": 521601315158018,
 									"parameters": {
 										"key": "left-shift"
 									}
@@ -74,14 +94,26 @@
 								{
 									"id": "set-animation",
 									"objectClass": "Vampire1",
-									"sid": 826051069822095,
+									"sid": 159869755580398,
 									"parameters": {
 										"animation": "\"Run-V1\"",
 										"from": "beginning"
 									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Áudio",
+									"sid": 135809758585933,
+									"parameters": {
+										"audio-file": "flapping-39306",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"wings\""
+									}
 								}
 							],
-							"sid": 758629273740479
+							"sid": 404895581077203
 						}
 					]
 				},
@@ -91,7 +123,7 @@
 						{
 							"id": "on-key-released",
 							"objectClass": "Teclado",
-							"sid": 843404656111868,
+							"sid": 444322890993070,
 							"parameters": {
 								"key": 39
 							}
@@ -101,22 +133,30 @@
 						{
 							"id": "set-animation",
 							"objectClass": "Vampire1",
-							"sid": 405109917228816,
+							"sid": 381340766888108,
 							"parameters": {
 								"animation": "\"Idle-V1\"",
 								"from": "beginning"
 							}
 						},
 						{
-							"id": "set-mirrored",
-							"objectClass": "Vampire1",
-							"sid": 448128871062074,
+							"id": "stop",
+							"objectClass": "Áudio",
+							"sid": 505485456924576,
 							"parameters": {
-								"state": "not-mirrored"
+								"tag": "\"walk\""
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Áudio",
+							"sid": 829905146959336,
+							"parameters": {
+								"tag": "\"walk-stone\""
 							}
 						}
 					],
-					"sid": 870568401976457
+					"sid": 625658478704324
 				},
 				{
 					"eventType": "block",
@@ -124,7 +164,7 @@
 						{
 							"id": "on-key-pressed",
 							"objectClass": "Teclado",
-							"sid": 702563944721896,
+							"sid": 572976360358326,
 							"parameters": {
 								"key": 37
 							}
@@ -132,24 +172,28 @@
 					],
 					"actions": [
 						{
-							"id": "set-mirrored",
+							"id": "set-animation",
 							"objectClass": "Vampire1",
-							"sid": 734289675073555,
+							"sid": 863592411390517,
 							"parameters": {
-								"state": "mirrored"
+								"animation": "\"Walk-V2\"",
+								"from": "beginning"
 							}
 						},
 						{
-							"id": "set-animation",
-							"objectClass": "Vampire1",
-							"sid": 988260479798064,
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 834373500186611,
 							"parameters": {
-								"animation": "\"Walk-V1\"",
-								"from": "beginning"
+								"audio-file": "walking-on-leaves-260279",
+								"loop": "looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"walk\""
 							}
 						}
 					],
-					"sid": 532918850053786,
+					"sid": 496847690183834,
 					"children": [
 						{
 							"eventType": "block",
@@ -157,7 +201,7 @@
 								{
 									"id": "is-left-right-key-down",
 									"objectClass": "Teclado",
-									"sid": 570571315096551,
+									"sid": 222691934519363,
 									"parameters": {
 										"key": "left-shift"
 									}
@@ -167,14 +211,34 @@
 								{
 									"id": "set-animation",
 									"objectClass": "Vampire1",
-									"sid": 117081574175907,
+									"sid": 291633531749598,
 									"parameters": {
-										"animation": "\"Run-V1\"",
+										"animation": "\"Run-V2\"",
 										"from": "beginning"
+									}
+								},
+								{
+									"id": "stop",
+									"objectClass": "Áudio",
+									"sid": 233087117001308,
+									"parameters": {
+										"tag": "\"walk\""
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Áudio",
+									"sid": 449018741068535,
+									"parameters": {
+										"audio-file": "flapping-39306",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"wings\""
 									}
 								}
 							],
-							"sid": 162481934758301
+							"sid": 321764202614769
 						}
 					]
 				},
@@ -184,7 +248,7 @@
 						{
 							"id": "on-key-released",
 							"objectClass": "Teclado",
-							"sid": 741780927298361,
+							"sid": 151191688851087,
 							"parameters": {
 								"key": 37
 							}
@@ -194,14 +258,107 @@
 						{
 							"id": "set-animation",
 							"objectClass": "Vampire1",
-							"sid": 896948287099930,
+							"sid": 412190765596767,
 							"parameters": {
-								"animation": "\"Idle-V1\"",
+								"animation": "\"Idle-V2\"",
 								"from": "beginning"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Áudio",
+							"sid": 458805217464597,
+							"parameters": {
+								"tag": "\"walk\""
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Áudio",
+							"sid": 473664563381358,
+							"parameters": {
+								"tag": "\"walk-stone\""
 							}
 						}
 					],
-					"sid": 926279234858960
+					"sid": 212897810492237
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 841737966144738,
+							"parameters": {
+								"key": 38
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop",
+							"objectClass": "Áudio",
+							"sid": 749092571222741,
+							"parameters": {
+								"tag": "\"walk\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 993608216260884,
+							"parameters": {
+								"audio-file": "flapping-39306",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"wings\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 151473541409497,
+							"parameters": {
+								"seconds": "0.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Áudio",
+							"sid": 992070602280110,
+							"parameters": {
+								"tag": "\"wings\""
+							}
+						}
+					],
+					"sid": 909377671036582
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Vampire1",
+							"sid": 294241819742360,
+							"parameters": {
+								"object": "ColisionPhase3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 679541664748536,
+							"parameters": {
+								"layout": "phase3"
+							}
+						}
+					],
+					"sid": 718231194569536
 				}
 			],
 			"sid": 266850174159256
@@ -229,38 +386,53 @@
 						{
 							"id": "set-animation",
 							"objectClass": "Vampire1",
-							"sid": 456512787442728,
+							"sid": 259509107603166,
 							"parameters": {
 								"animation": "\"Attack-V1\"",
-								"from": "current-frame"
+								"from": "beginning"
 							}
 						}
 					],
 					"sid": 999580844844610
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-animation-finished",
-							"objectClass": "Vampire1",
-							"sid": 214823223926440,
-							"parameters": {
-								"animation": "\"Attack-V1\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "stop-animation",
-							"objectClass": "Vampire1",
-							"sid": 711520662235936
-						}
-					],
-					"sid": 257433648874737
 				}
 			],
 			"sid": 120821507973254
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Vampire1",
+					"sid": 976857737349838,
+					"parameters": {
+						"object": "ponteTijolo"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Áudio",
+					"sid": 280668085111495,
+					"parameters": {
+						"tag": "\"walk\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 450035761718715,
+					"parameters": {
+						"audio-file": "stone-steps-6748",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"walk-stone\""
+					}
+				}
+			],
+			"sid": 732017021465803
 		}
 	],
 	"sid": 393736654699792

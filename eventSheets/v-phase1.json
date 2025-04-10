@@ -2,16 +2,6 @@
 	"name": "v-phase1",
 	"events": [
 		{
-			"eventType": "variable",
-			"name": "LifeV",
-			"type": "number",
-			"initialValue": "2",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 751428367568892
-		},
-		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Sistema Movimentação",
@@ -31,13 +21,13 @@
 						{
 							"id": "play",
 							"objectClass": "Áudio",
-							"sid": 282743548495229,
+							"sid": 526341634393346,
 							"parameters": {
 								"audio-file": "fx-gentle-glass-bells-ringtone-320337",
 								"loop": "not-looping",
 								"volume": "0",
 								"stereo-pan": "0",
-								"tag-optional": "\"\""
+								"tag-optional": "\"Song-P1\""
 							}
 						}
 					],
@@ -64,6 +54,18 @@
 								"animation": "\"Walk-V1\"",
 								"from": "beginning"
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 874460306943289,
+							"parameters": {
+								"audio-file": "walking-on-leaves-260279",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"walk\""
+							}
 						}
 					],
 					"sid": 317424097253565,
@@ -88,6 +90,18 @@
 									"parameters": {
 										"animation": "\"Run-V1\"",
 										"from": "beginning"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Áudio",
+									"sid": 783181680943861,
+									"parameters": {
+										"audio-file": "flapping-39306",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"wings\""
 									}
 								}
 							],
@@ -118,11 +132,11 @@
 							}
 						},
 						{
-							"id": "set-mirrored",
-							"objectClass": "Vampire1",
-							"sid": 183149409908542,
+							"id": "stop",
+							"objectClass": "Áudio",
+							"sid": 608642180848256,
 							"parameters": {
-								"state": "not-mirrored"
+								"tag": "\"walk\""
 							}
 						}
 					],
@@ -134,7 +148,7 @@
 						{
 							"id": "on-key-pressed",
 							"objectClass": "Teclado",
-							"sid": 446854106298271,
+							"sid": 966762454566733,
 							"parameters": {
 								"key": 37
 							}
@@ -142,24 +156,28 @@
 					],
 					"actions": [
 						{
-							"id": "set-mirrored",
+							"id": "set-animation",
 							"objectClass": "Vampire1",
-							"sid": 825910870396018,
+							"sid": 412793867118233,
 							"parameters": {
-								"state": "mirrored"
+								"animation": "\"Walk-V2\"",
+								"from": "beginning"
 							}
 						},
 						{
-							"id": "set-animation",
-							"objectClass": "Vampire1",
-							"sid": 286976848855674,
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 595841112075091,
 							"parameters": {
-								"animation": "\"Walk-V1\"",
-								"from": "beginning"
+								"audio-file": "walking-on-leaves-260279",
+								"loop": "looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"walk\""
 							}
 						}
 					],
-					"sid": 404884058669294,
+					"sid": 115830749966108,
 					"children": [
 						{
 							"eventType": "block",
@@ -167,7 +185,7 @@
 								{
 									"id": "is-left-right-key-down",
 									"objectClass": "Teclado",
-									"sid": 204562049659902,
+									"sid": 772446963556088,
 									"parameters": {
 										"key": "left-shift"
 									}
@@ -177,14 +195,34 @@
 								{
 									"id": "set-animation",
 									"objectClass": "Vampire1",
-									"sid": 613349888333202,
+									"sid": 675261726608295,
 									"parameters": {
-										"animation": "\"Run-V1\"",
+										"animation": "\"Run-V2\"",
 										"from": "beginning"
+									}
+								},
+								{
+									"id": "stop",
+									"objectClass": "Áudio",
+									"sid": 484737156518520,
+									"parameters": {
+										"tag": "\"walk\""
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Áudio",
+									"sid": 749384057312166,
+									"parameters": {
+										"audio-file": "flapping-39306",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"wings\""
 									}
 								}
 							],
-							"sid": 316484476818364
+							"sid": 466193422443441
 						}
 					]
 				},
@@ -194,7 +232,7 @@
 						{
 							"id": "on-key-released",
 							"objectClass": "Teclado",
-							"sid": 463431942249560,
+							"sid": 664335747345921,
 							"parameters": {
 								"key": 37
 							}
@@ -204,14 +242,99 @@
 						{
 							"id": "set-animation",
 							"objectClass": "Vampire1",
-							"sid": 892942013435590,
+							"sid": 116760704729988,
 							"parameters": {
-								"animation": "\"Idle-V1\"",
+								"animation": "\"Idle-V2\"",
 								"from": "beginning"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Áudio",
+							"sid": 861021220929055,
+							"parameters": {
+								"tag": "\"walk\""
 							}
 						}
 					],
-					"sid": 771178605546089
+					"sid": 848966959683019
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 581987588790727,
+							"parameters": {
+								"key": 38
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop",
+							"objectClass": "Áudio",
+							"sid": 638265702801157,
+							"parameters": {
+								"tag": "\"walk\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 195521782630854,
+							"parameters": {
+								"audio-file": "flapping-39306",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"wings\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 722585701134190,
+							"parameters": {
+								"seconds": "0.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Áudio",
+							"sid": 519559100560968,
+							"parameters": {
+								"tag": "\"wings\""
+							}
+						}
+					],
+					"sid": 198461539518402
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Vampire1",
+							"sid": 257408084819280,
+							"parameters": {
+								"object": "ColisionPhase2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 861248346145457,
+							"parameters": {
+								"layout": "phase2"
+							}
+						}
+					],
+					"sid": 712903391179427
 				}
 			],
 			"sid": 540961684969778
@@ -229,7 +352,7 @@
 						{
 							"id": "on-key-pressed",
 							"objectClass": "Teclado",
-							"sid": 268862234005127,
+							"sid": 780073979540811,
 							"parameters": {
 								"key": 70
 							}
@@ -237,42 +360,63 @@
 					],
 					"actions": [
 						{
-							"id": "set-animation",
+							"id": "spawn-another-object",
 							"objectClass": "Vampire1",
-							"sid": 180077631463859,
+							"sid": 895025735990372,
 							"parameters": {
-								"animation": "\"Attack-V1\"",
-								"from": "current-frame"
+								"object": "Sprite2",
+								"layer": "0",
+								"image-point": "1",
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
-						}
-					],
-					"sid": 673135898933263
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-animation-finished",
-							"objectClass": "Vampire1",
-							"sid": 942461552720908,
-							"parameters": {
-								"animation": "\"Attack-V1\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "stop-animation",
-							"objectClass": "Vampire1",
-							"sid": 382561586267180
 						},
 						{
-							"id": "stop-loop",
-							"objectClass": "System",
-							"sid": 958159556790230
+							"id": "set-animation",
+							"objectClass": "Vampire1",
+							"sid": 838143576803030,
+							"parameters": {
+								"animation": "\"Attack-V1\"",
+								"from": "beginning"
+							}
 						}
 					],
-					"sid": 947951251704042
+					"sid": 393717925173805,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Teclado",
+									"sid": 927554220545915,
+									"parameters": {
+										"key": 37
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Vampire1",
+									"sid": 451048209971577,
+									"parameters": {
+										"animation": "\"Attack-V2\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "start-animation",
+									"objectClass": "Vampire1",
+									"sid": 119146835738124,
+									"parameters": {
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 489680683752454
+						}
+					]
 				}
 			],
 			"sid": 253740818805443

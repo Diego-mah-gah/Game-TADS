@@ -1,0 +1,60 @@
+{
+	"name": "Sprite",
+	"plugin-id": "Sprite",
+	"sid": 182346317806888,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 23,
+						"height": 18,
+						"originX": 0.5217391304347826,
+						"originY": 0.8333333333333334,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1755100,
+						"collisionPoly": {
+							"points": [
+								0.34782608695652173,
+								0.05555555555555555,
+								0.6521739130434783,
+								0.05555555555555555,
+								0.9565217391304348,
+								0.3333333333333333,
+								0.7391304347826086,
+								0.7222222222222222,
+								0.5652173913043478,
+								0.9444444444444444,
+								0.43478260869565216,
+								0.9444444444444444,
+								0.2608695652173913,
+								0.7222222222222222,
+								0.043478260869565216,
+								0.2222222222222222
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 172857295856522,
+				"name": "Win-Item",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

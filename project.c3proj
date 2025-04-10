@@ -61,13 +61,6 @@
 			"name": "Sólido",
 			"author": "Scirra",
 			"bundled": false
-		},
-		{
-			"type": "effect",
-			"id": "depthstripe",
-			"name": "Faixa em profundidade",
-			"author": "Scirra",
-			"bundled": false
 		}
 	],
 	"uniqueId": "vmnkesxe2mv",
@@ -94,7 +87,13 @@
 			"PlantasCastelo",
 			"Pilar",
 			"ponteCastelo",
-			"PlanoDeFundoEmBlocos"
+			"PlanoDeFundoEmBlocos",
+			"ColisionPhase2",
+			"ColisionPhase3",
+			"Sprite",
+			"Sprite2",
+			"ponteCastelo2",
+			"ponteCastelo3"
 		],
 		"subfolders": []
 	},
@@ -110,7 +109,8 @@
 			"phase2",
 			"phase3",
 			"gameOver",
-			"titleScreen"
+			"titleScreen",
+			"Win"
 		],
 		"subfolders": []
 	},
@@ -120,7 +120,8 @@
 			"v-phase2",
 			"v-gameOverScreen",
 			"v-titleScreen",
-			"v-phase3"
+			"v-phase3",
+			"WinScreen"
 		],
 		"subfolders": []
 	},
@@ -191,6 +192,22 @@
 					"name": "violin-win-4-185127.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 169437601282649,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "stone-steps-6748.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 503979555780361,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "flapping-39306.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 751672301073852,
 					"file-info": {
 						"purpose": "none"
 					}
